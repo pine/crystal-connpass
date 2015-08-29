@@ -33,4 +33,9 @@ res.events.each{|e| puts e.title }
 
 ## Acknowledgement
 
+Thank you.
+
 - [deeeki](https://github.com/deeeki/connpass)
+
+## License
+MIT License
