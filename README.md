@@ -19,7 +19,7 @@ See example `example/event_search.cr`.
 ```crystal
 require "connpass"
 
-res = Connpass.event_search(keyword: 'Python')
+res = Connpass.event_search({ "keyword" => "Crystal" })
 res.events.each{|e| puts e.title }
 ```
 
