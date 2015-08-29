@@ -1,5 +1,7 @@
 # Connpass
 
+[![Build Status](https://travis-ci.org/pine613/crystal-connpass.svg?branch=master)](https://travis-ci.org/pine613/crystal-connpass)
+
 A Crystal wrapper for the [Connpass](http://connpass.com/) API inspired by [Ruby's implementation](https://github.com/deeeki/connpass).
 
 ## Installation
