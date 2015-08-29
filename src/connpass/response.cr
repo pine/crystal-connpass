@@ -28,12 +28,12 @@ module Connpass
         place: { type: String, nilable: true },
         lat: { type: String, nilable: true },
         lon: { type: String, nilable: true },
-        owner_id: Int32,
-        owner_nickname: String,
-        owner_display_name: String,
+        owner_id: { type: Int32, nilable: true },
+        owner_nickname: { type: String, nilable: true },
+        owner_display_name: { type: String, nilable: true },
         accepted: { type: Int32, nilable: true },
         waiting: {type: Int32, nilable: true },
-        updated_at: String,
+        updated_at: { type: String, nilable: true },
       })
     end
 
