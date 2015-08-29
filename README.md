@@ -14,7 +14,7 @@ end
 
 ## Usage
 
-See example `example/event_search.cr`.
+See example `example/event_search.cr` and [Official API reference](http://connpass.com/about/api/).
 
 ```crystal
 require "connpass"
