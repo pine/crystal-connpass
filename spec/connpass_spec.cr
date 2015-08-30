@@ -6,8 +6,10 @@ describe Connpass do
   end
 
   it "get" do
-    WebMock.stub(:get, "connpass.com/api/v1/event/?keyword=Crystal")
-    Connpass.get("event", { "keyword" => "Crystal" })
+    WebMock.wrap do
+      WebMock.stub(:get, "connpass.com/api/v1/event/?keyword=Crystal")
+      Connpass.get("event", { "keyword" => "Crystal" })
+    end
   end
 
   it "convert_response" do
