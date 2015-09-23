@@ -4,12 +4,13 @@ A [Crystal](http://crystal-lang.org/) wrapper for the [Connpass](http://connpass
 
 ## Installation
 
-Add it to `Projectfile`
+Add it to `shard.yml`
 
-```crystal
-deps do
-  github "pine613/crystal-connpass"
-end
+```yaml
+dependencies:
+  connpass:
+    github: pine613/connpass
+    branch: master
 ```
 
 ## Usage
