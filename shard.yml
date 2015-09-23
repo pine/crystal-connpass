@@ -1,0 +1,9 @@
+name: connpass
+version: 0.0.2
+
+development_dependencies:
+  webmock:
+    github: manastech/webmock.cr
+    version: 0.1.0
+
+license: MIT
