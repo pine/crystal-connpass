@@ -1,1 +1,22 @@
-language: crystal
+language: c
+sudo: false
+
+env:
+  global:
+    - PATH=$HOME/.crenv/bin:$PATH
+  matrix:
+    - CRYSTAL_VERSION=0.7.7
+
+install:
+  - git clone https://github.com/pine613/crenv ~/.crenv
+  - git clone https://github.com/pine613/crystal-build.git ~/.crenv/plugins/crystal-build
+  - eval "$(crenv init -)"
+  - crenv install $CRYSTAL_VERSION
+  - crenv global $CRYSTAL_VERSION
+  - crystal --version
+
+before_script:
+  - crystal deps
+
+script:
+  - crystal spec
