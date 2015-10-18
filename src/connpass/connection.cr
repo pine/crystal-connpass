@@ -1,4 +1,4 @@
-require "cgi"
+require "uri"
 require "http/client"
 
 module Connpass
@@ -15,7 +15,11 @@ module Connpass
     end
 
     private def build_query(options = {} of String => String)
-      options.to_a.map {|o| "#{o[0]}=#{CGI.escape(o[1].to_s)}" }.join("&")
+      options.to_a.map {|o| "#{o[0]}=#{escape(o[1].to_s)}" }.join("&")
+    end
+
+    private def escape(str)
+      URI.escape(str)
     end
   end
 end

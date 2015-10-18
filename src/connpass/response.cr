@@ -3,7 +3,7 @@ require "json"
 module Connpass
   module Response
     class Result
-      json_mapping({
+      JSON.mapping({
         results_returned: Int32,
         results_available: Int32,
         results_start: Int32,
@@ -12,7 +12,7 @@ module Connpass
     end
 
     class Event
-      json_mapping({
+      JSON.mapping({
         event_id: Int32,
         title: { type: String, nilable: true },
         catch: { type: String, nilable: true },
@@ -38,7 +38,7 @@ module Connpass
     end
 
     class Series
-      json_mapping({
+      JSON.mapping({
         id: Int32,
         title: { type: String, nilable: true },
         url: { type: String, nilable: true },

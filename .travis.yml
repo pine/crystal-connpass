@@ -5,7 +5,7 @@ env:
   global:
     - PATH=$HOME/.crenv/bin:$PATH
   matrix:
-    - CRYSTAL_VERSION=0.8.0
+    - CRYSTAL_VERSION=0.9.0
 
 install:
   - git clone https://github.com/pine613/crenv ~/.crenv
@@ -19,7 +19,7 @@ before_script:
   - crystal deps
 
 script:
-  - crystal spec
+  - make test
 
 notifications:
   slack:

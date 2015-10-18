@@ -10,3 +10,4 @@
 /.deps.lock
 /shard.lock
 
+/bin
