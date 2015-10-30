@@ -10,3 +10,5 @@ test:
 clean:
 	rm -rf .crystal
 	rm -rf libs
+	rm -rf .shards
+
