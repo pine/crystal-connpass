@@ -6,6 +6,7 @@ env:
     - PATH=$HOME/.crenv/bin:$PATH
   matrix:
     - CRYSTAL_VERSION=0.9.0
+    - CRYSTAL_VERSION=0.9.1
 
 install:
   - git clone https://github.com/pine613/crenv ~/.crenv
