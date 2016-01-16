@@ -8,6 +8,8 @@ env:
     - CRYSTAL_VERSION=0.9.0
     - CRYSTAL_VERSION=0.9.1
     - CRYSTAL_VERSION=0.10.0
+    - CRYSTAL_VERSION=0.10.1
+    - CRYSTAL_VERSION=0.10.2
 
 install:
   - git clone https://github.com/pine613/crenv ~/.crenv
