@@ -7,10 +7,10 @@ env:
   matrix:
     - CRYSTAL_VERSION=0.11.0
     - CRYSTAL_VERSION=0.11.1
+    - CRYSTAL_VERSION=0.12.0
 
 install:
-  - git clone https://github.com/pine613/crenv ~/.crenv
-  - git clone https://github.com/pine613/crystal-build.git ~/.crenv/plugins/crystal-build
+  - curl -L https://raw.github.com/pine613/crenv/master/install.sh | bash
   - eval "$(crenv init -)"
   - crenv install $CRYSTAL_VERSION
   - crenv global $CRYSTAL_VERSION
