@@ -1,7 +1,7 @@
 # Connpass
-[![Build Status](https://travis-ci.org/pine613/crystal-connpass.svg?branch=master)](https://travis-ci.org/pine613/crystal-connpass)
-[![Dependency Status](https://shards.rocks/badge/github/pine613/crystal-connpass/status.svg)](https://shards.rocks/github/pine613/crystal-connpass)
-[![devDependency Status](https://shards.rocks/badge/github/pine613/crystal-connpass/dev_status.svg)](https://shards.rocks/github/pine613/crystal-connpass)
+[![Build Status](https://travis-ci.org/pine/crystal-connpass.svg?branch=master)](https://travis-ci.org/pine/crystal-connpass)
+[![Dependency Status](https://shards.rocks/badge/github/pine/crystal-connpass/status.svg)](https://shards.rocks/github/pine/crystal-connpass)
+[![devDependency Status](https://shards.rocks/badge/github/pine/crystal-connpass/dev_status.svg)](https://shards.rocks/github/pine/crystal-connpass)
 
 A [Crystal](http://crystal-lang.org/) wrapper for the [Connpass](http://connpass.com/) API inspired by [Ruby's implementation](https://github.com/deeeki/connpass).
 
@@ -12,7 +12,7 @@ Add it to `shard.yml`
 ```yaml
 dependencies:
   connpass:
-    github: pine613/connpass
+    github: pine/connpass
     branch: master
 ```
 
@@ -28,10 +28,10 @@ res.events.each{|e| puts e.title }
 ```
 
 ## How to run example
-First, you should install Crystal compiler, using a tool such as [crenv](https://github.com/pine613/crenv).
+First, you should install Crystal compiler, using a tool such as [crenv](https://github.com/pine/crenv).
 
 ```
-$ git clone https://github.com/pine613/crystal-connpass.git
+$ git clone https://github.com/pine/crystal-connpass.git
 $ cd ./crystal-connpass
 $ crystal deps
 $ crystal run ./example/event_search.cr
@@ -57,7 +57,7 @@ All Ruby 10 events found.
 
 ## Contributing
 
-1. Fork it ( https://github.com/pine613/crystal-connpass/fork )
+1. Fork it ( https://github.com/pine/crystal-connpass/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
